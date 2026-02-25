@@ -1,0 +1,4 @@
+identification:
+  ros__parameters:
+    data_root_path: "./data_sample_example"
+    id: 0
