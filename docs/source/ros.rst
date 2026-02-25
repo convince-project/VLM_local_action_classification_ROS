@@ -208,7 +208,7 @@ Add the repository as a submodule
 
 .. code-block:: bash  
 
-    git submodule add https://gitlab.lri.cea.fr/ROS_developers/resources/VLM_local_action_classification.git
+    git submodule add https://github.com/convince-project/VLM_local_action_classification_ROS.git
 
     git submodule init
 
