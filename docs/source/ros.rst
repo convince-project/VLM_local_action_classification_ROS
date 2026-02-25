@@ -6,7 +6,9 @@ Install ros2 (humble)
 ---------------------
 
 Follow the steps in the official documentation : `ros_doc`_
+
 Install the dev-tools and any required ros-package for your setup.
+
 Source :
 
 .. code-block:: bash   
@@ -190,7 +192,7 @@ You can perform a test as follow:
 5. Open another terminal, source again, and call client:
 
 .. code-block:: bash  
-    
+
     ros2 service call /action_type identification_interface/srv/ActionType "{action_type_request: true}"
 
 You should be able to see the classfication of the action from /action_info topic, after some seconds.
@@ -203,6 +205,7 @@ Include to your project
 Add the repository as a submodule 
 
 .. code-block:: bash  
+
     git submodule add https://gitlab.lri.cea.fr/ROS_developers/resources/VLM_local_action_classification.git
 
     git submodule init
@@ -223,6 +226,7 @@ Build your project
 ------------------
 
 .. code-block:: bash  
+
     colcon build --symlink_install
 
 Visualize publisher info
@@ -231,4 +235,5 @@ Visualize publisher info
 Once you execute your project, you can visualize the actions info like this :
 
 .. code-block:: bash 
+
     ros2 topic echo /action_info
