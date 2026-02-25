@@ -6,10 +6,9 @@ Install ros2 (humble)
 ---------------------
 
 Follow the steps in the official documentation : `ros_doc`_
-
 Install the dev-tools and any required ros-package for your setup.
-
 Source :
+
 .. code-block:: bash   
 
     source /opt/ros/humble/setup.bash
@@ -22,12 +21,13 @@ Install python modules
 ----------------------
 
 .. code-block:: bash  
+
     pip3 install -r requirements.txt
 
 Depending on your setup you may prefer to install within a virtual environment.
 
-Adapt to your setup:
-====================
+Adapt to your setup
+===================
 
 Data organisation 
 -----------------
@@ -37,6 +37,7 @@ You can send one video, images (png or jpg format!) and csv files containing pro
 You will have to organise your data as follow, depending on which type of data you want to use; **keep the folders names and files extensions!** :
 
 .. code-block:: bash  
+
     -- root/
         -- video/
             {name}.mp4
@@ -62,6 +63,7 @@ At **identification/identification/prompts** create your script **prompts_{id}.p
 Templates are given for each :
 
 .. code-block:: bash  
+
     SYSTEM_PROMPT="""
     [SYSTEM]:
     You are a ...
@@ -162,20 +164,33 @@ Test on an example
 By default the configuration is set to run on the provided example **data_sample_example/**.
 You can perform a test as follow:
 1. Open a terminal at the root and build the project :
+
 .. code-block:: bash  
+
     colcon build --symlink-install
 
 2. Source :
+
 .. code-block:: bash  
+
     source install/setup.bash
+
 3. Launch the node :
+
 .. code-block:: bash  
+
     ros2 launch identification inference.launch.py
+
 4. Open another terminal, source again, and launch the action_info topic:
+
 .. code-block:: bash  
+
     ros2 topic echo /action_info
+
 5. Open another terminal, source again, and call client:
+
 .. code-block:: bash  
+    
     ros2 service call /action_type identification_interface/srv/ActionType "{action_type_request: true}"
 
 You should be able to see the classfication of the action from /action_info topic, after some seconds.
