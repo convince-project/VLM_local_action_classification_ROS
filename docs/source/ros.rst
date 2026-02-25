@@ -167,6 +167,7 @@ Test on an example
 
 By default the configuration is set to run on the provided example **data_sample_example/**.
 You can perform a test as follow:
+
 1. Open a terminal at the root and build the project :
 
 .. code-block:: bash  
