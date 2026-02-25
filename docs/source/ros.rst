@@ -31,6 +31,8 @@ Depending on your setup you may prefer to install within a virtual environment.
 Adapt to your setup
 ===================
 
+.. _data_organisation:
+
 Data organisation 
 -----------------
 
@@ -156,7 +158,7 @@ Define parameters
 
 Define your setup parameters at **identification/config/parameters.yaml** :
 
-**data_root_path** : The root to all your data folders as defined [above](#data-organisation)
+**data_root_path** : The root to all your data folders as defined :ref:`above <data_organisation>`.
 
 **id** : The chosen id for you setup
 
