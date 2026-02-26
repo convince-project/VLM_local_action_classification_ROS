@@ -24,6 +24,8 @@ Install python modules
 
 .. code-block:: bash  
 
+    git clone https://github.com/convince-project/VLM_local_action_classification_ROS.git
+
     pip3 install -r requirements.txt
 
 Depending on your setup you may prefer to install within a virtual environment.
