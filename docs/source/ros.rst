@@ -172,6 +172,8 @@ You can perform a test as follow:
 
 1. Open a terminal at the root and build the project :
 
+ **Better deactivate your virtual environment for the build, then reactivate it after the build.**
+
 .. code-block:: bash  
 
     colcon build --symlink-install
@@ -188,13 +190,13 @@ You can perform a test as follow:
 
     ros2 launch identification inference.launch.py
 
-4. Open another terminal, source again, and launch the action_info topic:
+4. Open another terminal at the root, source again, and launch the action_info topic:
 
 .. code-block:: bash  
 
     ros2 topic echo /action_info
 
-5. Open another terminal, source again, and call client:
+5. Open another terminal at the root, source again, and call client:
 
 .. code-block:: bash  
 
