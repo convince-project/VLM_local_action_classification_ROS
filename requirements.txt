@@ -34,5 +34,4 @@ pytest-cov;
 lark;
 optree>=0.13.0,
 catkin_pkg;
-em;
 
